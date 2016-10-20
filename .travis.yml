@@ -1,4 +1,21 @@
 language: objective-c
-osx_image: xcode7.3.1
+osx_image: xcode8
 xcode_project: TravisTest.xcodeproj
 xcode_scheme: TravisTest
+env:
+  global:
+  - secure: siWTC7CGI+Rua+mHyXvgHdnuCEt81JClucqFfmaM0WVNnz/ypyY0xtYNCpERoj13emsoXArMUZkGHI5jBQLsBgYUqbzTClZq6raeMCnRmGskTj6yEBocX2rwWR90js5h3z0cwUPKMwvAphvA3k2R1wBbUlVnzDRnKplpMXCQD2LbDhINChqwNphhXhVosmCSe8+U7CdBCPJRNOVqb6Za5nC9wQcjJ4dh6C1hgut8I62Jdacv1LBCwMfSdABfaoiREN3fFPyld9OTmstD+5XBYTvCvG/NNJUW//bDU5O15X/Ll9FgwV8egpUBKZ4fptTaZewTQQfZ1qSfqwLhJuxdYAKHUgqoI+GC2gum3nz8Ca98amPuLjHVrC37yADfQboqHiDyPU6nA3ZkIOnJhRbEXaAmUdt5+5AXxSwue1tUisySUB5UXrc+Y84MswY3FZ4Lc03EwNISLdpQOP8pK7BZbOqfvtqrwhNyhQtxMxZ+ejdcRtdBtVZhZFUVgZv7cVBkHyHwMkG/9O37DgBjT/L+cRTeQ5740ya04rOX0Q5mbXPfnjnjD6TjBP8yJmkGLuHMycg31Mp4JX4bOQ+pO04hcBdYe3IeqMenO8C3trNhsgyEe5jwmyRuzPkSDtwLEKXuiyXXrs7eqPrFQGJ7G2SABUUmdCvvpukFcF0o+GWEElk=
+  - secure: s+4L1Lukwj7KOBT5iRKLTb7XfCbgCN9Nw9YNj0PS+7xwbprb9L6xhTZ62UynMjjC4rpYW+2v/Jjy1Pp+qxaBlcgQtCF23/xzym1SwnHu8IbFgZX/virgi+potKJHZ+QqNPLsnFU033Dnbq5T/kbpf8HY7UEJtLSjgePgmdmkKs3TWql3DMjt7e+Zg2VomZTh6UVim4gUHAdetIKb5n4zciC5Nw4pREabyOPGWLN2cEPfmWrlNvUls5EHf4HJSDNjkrkEdByIwQa6R0u/9fYubjGywcY0cYN01eeBvMN6wWG7fT43tD/ulAyZukkYLjlJ6hFJ6/ptjqyZdCQhJgIumuBVNW1lyBBE0GY4Zc2DK1m619QKrnLW3g6QTynGQEgS0ime2y14yIK4uimXuWtlk7qiIEcxmkM2BdDvU7IkacsvGnd7sqiQKrWpEwye5SRsH7TJfWPv/uvWm/fvV23xVFi0Gv8jcAcC9IRYx2HwPcXAzYk/Ec8woSxGDWYYr0igsEZLKlCZP0Gi+fLZ2npKaxs4zVS9eZYJAQu1v2XzwQ92ZWw4RECOGNSl7sTGTo9dmCVZyjY527ymtzzmVRul497DQvYFEDaYtSlSUTDmTxJQNw71DQH0lDMziTMd7yKU/Hs2K5P/Sj0Nd5kjtJQpC4B5Lklcoi1hDhsHLMNea5w=
+before_script:
+- chmod +x scripts/decrypt-certificate.sh
+- chmod +x scripts/add-key.sh
+- chmod +x scripts/remove-key.sh
+- chmod +x scripts/upload.sh
+- ./scripts/decrypt-certificate.sh
+- ./scripts/add-key.sh
+script:
+- ./scripts/build.sh
+after_success:
+- ./scripts/upload.sh
+after_script:
+- ./scripts/remove-key.sh
