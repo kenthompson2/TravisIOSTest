@@ -11,4 +11,4 @@ curl https://rink.hockeyapp.net/api/2/apps/$APP_ID/app_versions/upload \
 -F status="2" \
 -F notify="0" \
 -F ipa="@$ARCHIVE_FILE" \
--H "X-HockeyAppToken: $API_TOKEN"
+-H "X-HockeyAppToken: $HOCKEY_APP_TOKEN"
