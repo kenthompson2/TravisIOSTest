@@ -8,5 +8,5 @@ openssl aes-256-cbc -k "$KEY_PASSWORD" -in "scripts/profile/travis_test.mobilepr
 openssl aes-256-cbc -k "$KEY_PASSWORD" -in "scripts/certs/dist.cer.enc" -d -a -out "scripts/certs/dist.cer"
 openssl aes-256-cbc -k "$KEY_PASSWORD" -in "scripts/certs/dist.p12.enc" -d -a -out "scripts/certs/dist.p12"
 
-echo `ls scripts/profile -la`
-echo `ls scripts/certs -la`
+echo `ls -la scripts/profile`
+echo `ls -la scripts/certs`
