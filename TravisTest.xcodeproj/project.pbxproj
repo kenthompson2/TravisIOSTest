@@ -12,6 +12,16 @@
 		4D24E82A1DB16DBA00BF2841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E8281DB16DBA00BF2841 /* Main.storyboard */; };
 		4D24E82C1DB16DBA00BF2841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E82B1DB16DBA00BF2841 /* Assets.xcassets */; };
 		4D24E82F1DB16DBA00BF2841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D24E82D1DB16DBA00BF2841 /* LaunchScreen.storyboard */; };
+		4DDAFB1C1DC26C6B0044FFC3 /* add-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB111DC26C6B0044FFC3 /* add-key.sh */; };
+		4DDAFB1D1DC26C6B0044FFC3 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB121DC26C6B0044FFC3 /* build.sh */; };
+		4DDAFB1E1DC26C6B0044FFC3 /* apple.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB141DC26C6B0044FFC3 /* apple.cer */; };
+		4DDAFB1F1DC26C6B0044FFC3 /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB151DC26C6B0044FFC3 /* dist.cer.enc */; };
+		4DDAFB201DC26C6B0044FFC3 /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB161DC26C6B0044FFC3 /* dist.p12.enc */; };
+		4DDAFB211DC26C6B0044FFC3 /* decrypt-certificate.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB171DC26C6B0044FFC3 /* decrypt-certificate.sh */; };
+		4DDAFB221DC26C6B0044FFC3 /* travis_test.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB191DC26C6B0044FFC3 /* travis_test.mobileprovision.enc */; };
+		4DDAFB231DC26C6B0044FFC3 /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB1A1DC26C6B0044FFC3 /* remove-key.sh */; };
+		4DDAFB241DC26C6B0044FFC3 /* upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB1B1DC26C6B0044FFC3 /* upload.sh */; };
+		4DDAFB261DC26C820044FFC3 /* ipabuilder in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAFB251DC26C820044FFC3 /* ipabuilder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		4D24E82B1DB16DBA00BF2841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D24E82E1DB16DBA00BF2841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D24E8301DB16DBA00BF2841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDAFB111DC26C6B0044FFC3 /* add-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-key.sh"; sourceTree = "<group>"; };
+		4DDAFB121DC26C6B0044FFC3 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		4DDAFB141DC26C6B0044FFC3 /* apple.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.cer; sourceTree = "<group>"; };
+		4DDAFB151DC26C6B0044FFC3 /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
+		4DDAFB161DC26C6B0044FFC3 /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
+		4DDAFB171DC26C6B0044FFC3 /* decrypt-certificate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "decrypt-certificate.sh"; sourceTree = "<group>"; };
+		4DDAFB191DC26C6B0044FFC3 /* travis_test.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = travis_test.mobileprovision.enc; sourceTree = "<group>"; };
+		4DDAFB1A1DC26C6B0044FFC3 /* remove-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "remove-key.sh"; sourceTree = "<group>"; };
+		4DDAFB1B1DC26C6B0044FFC3 /* upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = upload.sh; sourceTree = "<group>"; };
+		4DDAFB251DC26C820044FFC3 /* ipabuilder */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ipabuilder; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,7 @@
 		4D24E8181DB16DBA00BF2841 = {
 			isa = PBXGroup;
 			children = (
+				4DDAFB101DC26C6B0044FFC3 /* scripts */,
 				4D24E8231DB16DBA00BF2841 /* TravisTest */,
 				4D24E8221DB16DBA00BF2841 /* Products */,
 			);
@@ -62,6 +83,39 @@
 				4D24E8301DB16DBA00BF2841 /* Info.plist */,
 			);
 			path = TravisTest;
+			sourceTree = "<group>";
+		};
+		4DDAFB101DC26C6B0044FFC3 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAFB251DC26C820044FFC3 /* ipabuilder */,
+				4DDAFB111DC26C6B0044FFC3 /* add-key.sh */,
+				4DDAFB121DC26C6B0044FFC3 /* build.sh */,
+				4DDAFB131DC26C6B0044FFC3 /* certs */,
+				4DDAFB171DC26C6B0044FFC3 /* decrypt-certificate.sh */,
+				4DDAFB181DC26C6B0044FFC3 /* profile */,
+				4DDAFB1A1DC26C6B0044FFC3 /* remove-key.sh */,
+				4DDAFB1B1DC26C6B0044FFC3 /* upload.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		4DDAFB131DC26C6B0044FFC3 /* certs */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAFB141DC26C6B0044FFC3 /* apple.cer */,
+				4DDAFB151DC26C6B0044FFC3 /* dist.cer.enc */,
+				4DDAFB161DC26C6B0044FFC3 /* dist.p12.enc */,
+			);
+			path = certs;
+			sourceTree = "<group>";
+		};
+		4DDAFB181DC26C6B0044FFC3 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAFB191DC26C6B0044FFC3 /* travis_test.mobileprovision.enc */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +178,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDAFB1F1DC26C6B0044FFC3 /* dist.cer.enc in Resources */,
+				4DDAFB231DC26C6B0044FFC3 /* remove-key.sh in Resources */,
 				4D24E82F1DB16DBA00BF2841 /* LaunchScreen.storyboard in Resources */,
+				4DDAFB241DC26C6B0044FFC3 /* upload.sh in Resources */,
+				4DDAFB1E1DC26C6B0044FFC3 /* apple.cer in Resources */,
 				4D24E82C1DB16DBA00BF2841 /* Assets.xcassets in Resources */,
+				4DDAFB211DC26C6B0044FFC3 /* decrypt-certificate.sh in Resources */,
+				4DDAFB1C1DC26C6B0044FFC3 /* add-key.sh in Resources */,
+				4DDAFB221DC26C6B0044FFC3 /* travis_test.mobileprovision.enc in Resources */,
+				4DDAFB201DC26C6B0044FFC3 /* dist.p12.enc in Resources */,
+				4DDAFB261DC26C820044FFC3 /* ipabuilder in Resources */,
 				4D24E82A1DB16DBA00BF2841 /* Main.storyboard in Resources */,
+				4DDAFB1D1DC26C6B0044FFC3 /* build.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

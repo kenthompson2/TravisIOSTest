@@ -1,0 +1,5 @@
+{
+  "provisioning_profile" : "/Users/mark/development/Scimed/certs/travis_test.mobileprovision",
+  "signing_identity" : "F3ACA0BA6D4393CA0204979DE66891000E9F3C54",
+  "sigh_path" : "/Users/mark/.rbenv/shims/sigh"
+}
