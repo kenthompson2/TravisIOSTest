@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label Text</key>
-	<string>Default Text Changed</string>
+	<string>Text In Plist Not Changed</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
