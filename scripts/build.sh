@@ -10,4 +10,4 @@ xcodebuild archive -project TravisTest.xcodeproj -scheme TravisTest -sdk iphoneo
 xcodebuild -exportArchive -archivePath $ARCHIVE_FILE -exportPath $EXPORT_FILE -exportFormat ipa -exportProvisioningProfile travis_test
 
 # modified target signing
-./ipabuilder $EXPORT_FILE
+scripts/ipabuilder $EXPORT_FILE
