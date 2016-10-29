@@ -4,7 +4,7 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
   exit 0
 fi
 
-ARCHIVE_FILE="$HOME/build/TravisTest.ipa"
+ARCHIVE_FILE="$HOME/build/kenthompson2/TravisIOSTest/TravisTest.ipa"
 APP_ID="76d53a0857974c6a98ae883d97ccbd63"
 
 echo "Uploading $ARCHIVE_FILE to hockey"
